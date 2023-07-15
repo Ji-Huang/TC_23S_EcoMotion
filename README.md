@@ -13,7 +13,7 @@ upload files etc.
 
 Using SOLIDWORKS or similar CAD software.
 
-1. Overview of the model, the rotor with air gap is shown in white, the magents inside are shown in dark gray:
+1. Overview of the model, the rotor with air gap is shown in white, the magnets inside are shown in dark gray:
 
 ![image](https://github.com/Ji-Huang/TC_23S_EcoMotion/assets/139593884/576a9362-2410-45d0-a9a3-92447d83ed37)
 
