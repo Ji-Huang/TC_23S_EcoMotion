@@ -13,7 +13,7 @@ upload files etc.
 
 Using SOLIDWORKS or similar CAD software.
 
-1. Overview of the model, the rotor with air gap is shown in white, the magnets inside are shown in dark gray:
+1. Overview of the model, the rotor with flux barrier is shown in white, the magnets are shown in dark gray:
 
 ![image](https://github.com/Ji-Huang/TC_23S_EcoMotion/assets/139593884/576a9362-2410-45d0-a9a3-92447d83ed37)
 
@@ -21,7 +21,7 @@ Using SOLIDWORKS or similar CAD software.
 
 2. For the parameters of the CAD model, please refer to *CAD_Modeling/CAD_size.pdf*. You can also find the original SOLIDWORKS PART file and .stl files under the *CAD_Modeling* folder.
 
-3. Tips for modeling: First draw half of the model as a stack of cylinders, and make a sketch on the side of the rotor, extrude and cut out the air gap. Then mirror the half model with respect to this surface to create the complete model.  Finally, project the air gap sketch onto another reference surface and extrude the magnet with preferably a different color.
+3. Tips for modeling: First draw half of the model as a stack of cylinders, and make a sketch on the side of the rotor, extrude and cut out the flux barrier. Then mirror the half model with respect to this surface to create the complete model.  Finally, project the flux barrier sketch onto another reference surface and extrude the magnet with preferably a different color.
 
 ## 3D-Printing
 
