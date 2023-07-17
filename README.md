@@ -8,12 +8,15 @@ Team Members: **Drishtant Sharma, Mark Hovsepyan, Ji Huang and Vasil Popgavrilov
 Requirements: MATLAB; SyR-e (Synchronous Reluctance Evolution) which is an open source code developed in MATLAB/OCTAVE and is normally used together with FEMM (Finite Element Method Magnetics) for FEA (Finite Element Analysis) Simulations.
 ![5046d8d6-be65-4250-a6cc-0f70abb735a1](https://github.com/Ji-Huang/TC_23S_EcoMotion/assets/139593884/2acc7c34-1dd2-42b4-bd2f-8d5aa54762b9)
 
-1. SyR-e consists of 2 different GUIs (Graphics User Interface) namely GUI_Syre (The main GUI) and GUI_Syre_MMM. The main GUI is mainly responsible for optimizing the design of the motor including altering the parameters of the stator, rotor as well as that of the flux barriers (Main Data Tab), inserting different types of magnetic materials in the flux barriers (Materials Tab) and carrying different type of simulations (Simulation Tab) at a particular rotor speed (usually 780 rpm)  to analyze important parameters of the motor such as the resulting torque, torque ripple and iron loss taking place in the motor . The main simulations that are carried out using this GUI are the Flux Map and Iron Loss- Flux Map Simulations. These simulations along with the drawn and evaluated slot model of the SynRM (Windings Tab) form the basis of the MMM (Magnetic Model Manipulation) Simulations further (Note that the highlighted temperature was altered to obtain an appropriate slot model of the motor).
+1. SyR-e consists of 2 different GUIs (Graphics User Interface) namely GUI_Syre (The main GUI) and GUI_Syre_MMM. The main GUI is mainly responsible for optimizing the design of the motor including altering the parameters of the stator, rotor as well as that of the flux barriers (Main Data Tab), inserting different types of magnetic materials in the flux barriers (Materials Tab) and carrying different type of simulations (Simulation Tab) at a particular rotor speed (usually 780 rpm)  to analyze important parameters of the motor such as the resulting torque, torque ripple and iron loss taking place in the motor . The main simulations that are carried out using this GUI are the Flux Map and Iron Loss- Flux Map Simulations. These simulations along with the drawn and evaluated slot model of the SynRM (Windings Tab) form the basis of the MMM (Magnetic Model Manipulation) Simulations further.
 
 ![7475c2f2-4b05-45f0-b339-5bd9e82360f6](https://github.com/Ji-Huang/TC_23S_EcoMotion/assets/139593884/4b90da05-d50d-4d86-a39c-fff7afcbdade)
 ![9d501d0b-391f-475f-a669-1bbbd62249f3](https://github.com/Ji-Huang/TC_23S_EcoMotion/assets/139593884/0a45ee8a-e960-466a-89fd-68025a9c5551)
+(The Temperature Vector has been altered accordingly in order to get an appropriate Slot Model to use later for the simulation)
 
 2. The GUI_Syre_MMM does not carry out any simulations but helps in loading the simulated data and post processing it. The Flux Map , Iron Loss - Flux Map simulation results and the Evaluated Slot Model (Skin effect Model) are loaded in that order. Then through simple manipulations various maps can be computed such as MTPA/MTPV Control Trajectories, Inductance and Anisotropy Maps, Various types of Iron Losses and Inverse Models. The most relevant ones for us, in this case, are the graphs obtained for various types of iron losses (such as Total Iron Loss and  Rotor current Eddy Loss). 
+
+![e58cf2a6-5421-4f14-ac55-9637a13193c6](https://github.com/Ji-Huang/TC_23S_EcoMotion/assets/139593884/e8101e91-bfe7-41e9-9f5e-96e15d0c80d7)
 
 3. The following Simulations are then first of all carried out for our prototype of the  Synchronous Reluctance Motor consisting of two pole pairs and a circular rotor (Named as TC1  in this case). 
 
@@ -21,17 +24,17 @@ Requirements: MATLAB; SyR-e (Synchronous Reluctance Evolution) which is an open 
  
 5. The same simulations are then carried out for TC1 (Ferrite Magnet Machine) and the comparison of the most important graphs is then made in order to determine how introducing the magnets helps in reducing the respective iron losses and thus making the SynRM more energy efficient. 
 
-The following graphs can be used to compare the Total Iron Loss and Rotor Eddy Currents of TC1 vs TC1 (Ferrite Magnet Machine) . From the above graphs it can be seen that the introduction of Ferrite Magnet has led to a 7% reduction in the Rotor Eddy current losses and a 2% reduction in the Total Iron Loss when both the motors are  simulated at a current load of 8 Amperes.
+![54df0ad9-1057-4ba2-9bd2-7916c0bac1f9](https://github.com/Ji-Huang/TC_23S_EcoMotion/assets/139593884/c53c51ca-1e5b-4eed-8489-22572ec3e2bc)
+
+6. The following graphs can be used to compare the Total Iron Loss and Rotor Eddy Currents of TC1 vs TC1 (Ferrite Magnet Machine) . From the above graphs it can be seen that the introduction of Ferrite Magnet has led to a 7% reduction in the Rotor Eddy current losses and a 2% reduction in the Total Iron Loss when both the motors are  simulated at a current load of 8 Amperes.
 
 ![bdd5f5db-0644-488a-841b-32a95e8d3cc1](https://github.com/Ji-Huang/TC_23S_EcoMotion/assets/139593884/bb0f5b72-4e38-4c30-aad0-1908cf38c05f)
 
 ![9e504c9d-42ad-49ce-a1a3-d285622afa4b](https://github.com/Ji-Huang/TC_23S_EcoMotion/assets/139593884/8097f61a-6e86-4d67-8aaf-cef58fbc4803)
 
-6. These parameters can be further optimized by altering the magnetic material to be introduced in the flux barriers ( Neodymium or Strontium Magnets) and optimizing their amount and orientation to also ensure the most optimum weight to cost ratio.
+7. These parameters can be further optimized by altering the magnetic material to be introduced in the flux barriers ( Neodymium or Strontium Magnets) and optimizing their amount and orientation to also ensure the most optimum weight to cost ratio.
 
-![e58cf2a6-5421-4f14-ac55-9637a13193c6](https://github.com/Ji-Huang/TC_23S_EcoMotion/assets/139593884/e8101e91-bfe7-41e9-9f5e-96e15d0c80d7)
 
-![54df0ad9-1057-4ba2-9bd2-7916c0bac1f9](https://github.com/Ji-Huang/TC_23S_EcoMotion/assets/139593884/c53c51ca-1e5b-4eed-8489-22572ec3e2bc)
 
 
 ## CAD modeling
